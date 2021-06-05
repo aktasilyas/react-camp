@@ -1,11 +1,11 @@
 import React from "react";
 import CardSummary from "./CardSummary";
-import { Button, Container, Dropdown, Menu } from 'semantic-ui-react'
+import { Button, Container, Menu } from 'semantic-ui-react'
 
 export default function Navi() {
   return (
     <div>
-      <Menu inverted fixed>
+      <Menu inverted fixed="top">
 
           <Container>
           <Menu.Item
@@ -16,13 +16,8 @@ export default function Navi() {
         />
 
         <Menu.Menu position="right">
-          <Dropdown item text="Language">
-            <Dropdown.Menu>
-              <Dropdown.Item>English</Dropdown.Item>
-              <Dropdown.Item>Russian</Dropdown.Item>
-              <Dropdown.Item>Spanish</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+         
+         <CardSummary></CardSummary>
 
           <Menu.Item>
             <Button primary>Sign Up</Button>
